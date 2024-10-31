@@ -68,7 +68,7 @@ class MLInputPipeline:
 
         return df
 
-    def _map_hour_to_time_of_day(hour: int) -> int:
+    def _map_hour_to_time_of_day(self, hour: int) -> int:
         """Map hour to time of day category.
     
         Args:
