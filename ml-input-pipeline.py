@@ -118,11 +118,9 @@ class MLInputPipeline:
             )
             .rename(columns={
                 "video_id":"id",
-                "video_title":"title",
-                 "video_publish_datetime":"publish_datetime",
                  "video_view_count":"view_count"
             })
-            .drop(columns=["video_duration"])
+            .drop(columns=["video_duration", "video_publish_datetime", "video_title"])
         )
 
         return df
