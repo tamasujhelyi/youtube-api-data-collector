@@ -1,3 +1,4 @@
 .env
 .venv
 service-account-key.json
+*.pkl
