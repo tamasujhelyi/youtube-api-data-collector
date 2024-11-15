@@ -1,0 +1,14 @@
+model_features:
+  - duration_seconds
+  - publish_year
+  - publish_month
+  - publish_day
+  - publish_day_of_week
+  - publish_hour
+  - days_since_channel_creation
+  - title_length
+  - title_word_count
+  - title_sentiment_score
+  - title_is_highlights
+model_target:
+  - view_count
