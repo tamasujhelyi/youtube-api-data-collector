@@ -115,6 +115,7 @@ class MLInputPipeline:
                 title_length=lambda df_: df_["video_title"].apply(lambda x: len(x)),
                 title_word_count=lambda df_: df_["video_title"].apply(lambda x: len(str(x).split())),
                 title_sentiment_score=lambda df_: df_["video_title"].apply(lambda x: round(TextBlob(x).sentiment.polarity, 2)),
+                title_is_highlights=lambda df_: df_["video_title"].str.contains("Highlights").astype("int")
             )
             .rename(columns={
                 "video_id":"id",
